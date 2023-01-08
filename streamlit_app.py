@@ -87,10 +87,10 @@ def d(n):
 #            return "Thanks for adding" + new_fruit
 
 
+a = streamlit.text_input('b')
       
-b = d("f")
+b = d(a)
 
-streamlit.text(b)
 
 
 
