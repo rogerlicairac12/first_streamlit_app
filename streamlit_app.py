@@ -88,8 +88,8 @@ def d(n):
 
 
 a = streamlit.text_input('b')
-      
-b = d(a)
+c = streamlit.text(a)
+b = d(c)
 
 
 
