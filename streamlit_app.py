@@ -88,9 +88,9 @@ def d(n):
 
 
       
-back_from_function = d(a)
+b = d(a)
 
-streamlit.text(back_from_function)
+streamlit.text(b)
 
 
 
