@@ -88,7 +88,7 @@ def d(n):
 
 
       
-b = d(a)
+b = d("f")
 
 streamlit.text(b)
 
