@@ -79,8 +79,8 @@ if streamlit.button('Get Fruit Load List'):
 def d(n):
       with my_cnx.cursor() as my_cur:
             streamlit.text('Thanks for adding')
-      my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-      return "thanks for adding " + n
+            my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+            return "thanks for adding " + n
 
 # Allow the end user to add a fruit to the list
 #def d(new_fruit):
