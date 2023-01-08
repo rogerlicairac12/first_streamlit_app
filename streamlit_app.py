@@ -76,13 +76,14 @@ if streamlit.button('Get Fruit Load List'):
       my_data_rows = get_fruit_load_list()
       streamlit.dataframe(my_data_rows)
 
+# Allow the end user to add a fruit to the list
+      
 def d(n):
       with my_cnx.cursor() as my_cur:
             streamlit.text('Thanks for adding')
             my_cur.execute("insert into fruit_load_list values ('from streamlit')")
             return "thanks for adding " + n
 
-# Allow the end user to add a fruit to the list
 #def d(new_fruit):
 #      with my_cnx.cursor() as my_cur:
 #            my_cur.execute("insert into fruit_load_list values ('from streamlit')")
