@@ -87,9 +87,10 @@ def d(n):
 #            return "Thanks for adding" + new_fruit
 
 
-a = streamlit.text_input('b')
-#c = streamlit.text(a)
-e = d(a)
+a = streamlit.text_input('what fruit would you add?')
+if streamlit.button('Add a Fruit to the list'):
+      #c = streamlit.text(a)
+      e = d(a)
 
 
 
