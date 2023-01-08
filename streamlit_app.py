@@ -89,7 +89,7 @@ def d(n):
 #            return "Thanks for adding" + new_fruit
 
 
-a = streamlit.text_input('what fruit would you add?')
+a = streamlit.text_input('what fruit would you like to add?')
 if streamlit.button('Add a Fruit to the list'):
       my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
       e = d(a)
